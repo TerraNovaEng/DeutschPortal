@@ -1,0 +1,189 @@
+p <!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerraNova Learning & Survey Hub</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="h-full bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-slate-100 flex flex-col justify-between selection:bg-indigo-500 selection:text-white">
+
+    <!-- Header Section -->
+    <header class="w-full py-8 px-6 text-center border-b border-slate-800/80 backdrop-blur-md bg-slate-900/50 sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 to-teal-400 flex items-center justify-center shadow-lg shadow-indigo-500/30">
+                    <i class="fa-solid fa-graduation-cap text-slate-950 text-lg"></i>
+                </div>
+                <div class="text-left">
+                    <h1 class="text-xl font-bold tracking-tight text-white">TerraNova Hub</h1>
+                    <p class="text-xs text-slate-400">Deutsch Classrooms, Surveys & Web ApPortal</p>
+                </div>
+            </div>
+            <div class="text-xs text-slate-400 bg-slate-800/60 px-3.5 py-1.5 rounded-full border border-slate-700/50 flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                Active Portal
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Hub Grid -->
+    <main class="flex-grow max-w-4xl w-full mx-auto px-6 py-12 flex flex-col justify-center">
+        
+        <div class="text-center mb-10">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">Welcome to Your Learning Portal</h2>
+            <p class="text-slate-400 max-w-lg mx-auto text-sm sm:text-base">Access course materials, participate in surveys, and join our virtual classrooms seamlessly.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <!-- Card 1: Survey -->
+            <div class="group relative bg-slate-800/50 hover:bg-slate-800/80 border border-slate-700/60 hover:border-indigo-500/50 rounded-2xl p-6 transition-all duration-300 shadow-xl hover:shadow-2xl hover:shadow-indigo-500/10 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-square-poll-vertical text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-indigo-300 transition-colors">Survey Portal</h3>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">Share your feedback and complete active surveys to help improve our programs.</p>
+                </div>
+                <a href="https://terranovaeng.github.io/survey/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-between w-full py-3 px-4 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm transition-all shadow-md shadow-indigo-600/30 group-hover:translate-y-[-2px]">
+                    <span>Open Survey</span>
+                    <i class="fa-solid fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i>
+                </a>
+            </div>
+
+            <!-- Card 2: Haus der Worte Deutsch -->
+            <div class="group relative bg-slate-800/50 hover:bg-slate-800/80 border border-slate-700/60 hover:border-teal-500/50 rounded-2xl p-6 transition-all duration-300 shadow-xl hover:shadow-2xl hover:shadow-teal-500/10 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-teal-500/10 border border-teal-500/20 text-teal-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-book-open-reader text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-teal-300 transition-colors">Haus der Worte Deutsch</h3>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">Explore German vocabulary, flashcards and interactive modules.</p>
+                </div>
+                <a href="https://terranovaeng.github.io/haus-der-worte-deutsch/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-between w-full py-3 px-4 rounded-xl bg-teal-600 hover:bg-teal-500 text-white font-medium text-sm transition-all shadow-md shadow-teal-600/30 group-hover:translate-y-[-2px]">
+                    <span>Open Portal</span>
+                    <i class="fa-solid fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i>
+                </a>
+            </div>
+
+            <!-- Card 3: Google Classroom -->
+            <div class="group relative bg-slate-800/50 hover:bg-slate-800/80 border border-slate-700/60 hover:border-amber-500/50 rounded-2xl p-6 transition-all duration-300 shadow-xl hover:shadow-2xl hover:shadow-amber-500/10 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-brands fa-google text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-amber-300 transition-colors">Google Classroom</h3>
+                    <p class="text-slate-400 text-sm mb-4 leading-relaxed">Join assignments, discussions, and class updates directly.</p>
+                    
+                    <!-- Class Code Box -->
+                    <div class="bg-slate-900/80 border border-slate-700/80 rounded-xl p-3 mb-6 flex items-center justify-between">
+                        <div>
+                            <span class="text-[10px] uppercase font-bold tracking-wider text-slate-400 block mb-0.5">Class Code</span>
+                            <span id="classCodeText" class="font-mono text-sm font-bold text-amber-400 tracking-wider">nq66rh3v</span>
+                        </div>
+                        <button onclick="copyClassCode(this)" title="Copy Class Code" class="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors active:scale-95 text-xs flex items-center gap-1.5 border border-slate-700">
+                            <i class="fa-regular fa-copy"></i>
+                            <span class="copy-label">Copy</span>
+                        </button>
+                    </div>
+                </div>
+                <a href="https://classroom.google.com/c/ODkyOTg1Njk4OTkw?cjc=nq66rh3v" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-between w-full py-3 px-4 rounded-xl bg-amber-600 hover:bg-amber-500 text-slate-950 font-semibold text-sm transition-all shadow-md shadow-amber-600/30 group-hover:translate-y-[-2px]">
+                    <span>Join Classroom</span>
+                    <i class="fa-solid fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Custom Notification Toast -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-slate-800 border border-slate-700 text-white px-4 py-3 rounded-xl shadow-2xl flex items-center gap-3">
+        <div class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs">
+            <i class="fa-solid fa-check"></i>
+        </div>
+        <span id="toastMessage" class="text-sm font-medium">Copied to clipboard!</span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w-full py-6 text-center text-xs text-slate-500 border-t border-slate-800/80">
+        <p>&copy; 2026 TerraNova Eng & German. All rights reserved.</p>
+    </footer>
+
+    <!-- Script to Handle Copying and Feedback -->
+    <script>
+        function copyClassCode(buttonElement) {
+            const code = "nq66rh3v";
+            
+            // Fallback copy method compatible with sandbox iframes
+            const textArea = document.createElement("textarea");
+            textArea.value = code;
+            textArea.style.position = "fixed";  // Avoid scrolling to bottom
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            
+            try {
+                const successful = document.execCommand('copy');
+                if (successful) {
+                    showToast("Class code 'nq66rh3v' copied!");
+                    
+                    // Update button temporarily
+                    const label = buttonElement.querySelector('.copy-label');
+                    const icon = buttonElement.querySelector('i');
+                    if (label) label.textContent = "Copied!";
+                    if (icon) {
+                        icon.className = "fa-solid fa-check text-emerald-400";
+                    }
+                    setTimeout(() => {
+                        if (label) label.textContent = "Copy";
+                        if (icon) {
+                            icon.className = "fa-regular fa-copy";
+                        }
+                    }, 2000);
+                } else {
+                    showToast("Failed to copy code.", true);
+                }
+            } catch (err) {
+                showToast("Unable to copy automatically.", true);
+            }
+            
+            document.body.removeChild(textArea);
+        }
+
+        function showToast(message, isError = false) {
+            const toast = document.getElementById('toast');
+            const toastMessage = document.getElementById('toastMessage');
+            toastMessage.textContent = message;
+            
+            if (isError) {
+                toast.classList.add('border-red-500/50');
+            } else {
+                toast.classList.remove('border-red-500/50');
+            }
+
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            setTimeout(() => {
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
